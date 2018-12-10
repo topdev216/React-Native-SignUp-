@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import {
     View, Image, Dimensions, TouchableOpacity, Platform
 } from 'react-native';
-import Icon from 'react-native-vector-icons/SimpleLineIcons';
+// import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import {getStyleFromProps, getPlatformValue} from '../../utils';
 
 const window = Dimensions.get('window');
@@ -12,7 +12,7 @@ export default class BackgroundWrapper extends Component {
         let childrens = [];
         if (this.props.iconLeft) childrens.push(
             <TouchableOpacity key="icon_left" onPress={this.props.onPressIcon} style={{height: 35}}>
-                <Icon color="#ffffff" size={25} name={this.props.iconLeft} style={styleWrapper.icon}/>
+                {/* <Icon color="#ffffff" size={25} name={this.props.iconLeft} style={styleWrapper.icon}/> */}
             </TouchableOpacity>
         );
         childrens.push(this.props.children);

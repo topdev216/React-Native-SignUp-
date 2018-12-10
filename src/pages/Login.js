@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {View, Text, Image, StyleSheet, Alert, Animated} from 'react-native';
 import {Input, Button, Logo, Heading, BackgroundWrapper, AlertStatus} from '../components';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import {Actions, ActionConst} from 'react-native-router-flux';
 import {getPlatformValue} from '../utils';
 
@@ -68,14 +68,14 @@ export default class Login extends Component {
                 <View style={loginStyle.formContainer}>
                     <Animated.View style={{position: 'relative', left: this.state.animation.usernamePostionLeft}}>
                         <Input label="Username"
-                               icon={<Icon name="user"/>}
+                            //    icon={<Icon name="user"/>}
                                value={this.state.username}
                                onChange={this.handleChangeInput.bind(this, 'username')}
                         />
                     </Animated.View>
                     <Animated.View style={{position: 'relative', left: this.state.animation.passwordPositionLeft}}>
                         <Input label="Password"
-                               icon={<Icon name="key"/>}
+                            //    icon={<Icon name="key"/>}
                                value={this.state.password}
                                marginTop={23}
                                onChange={this.handleChangeInput.bind(this, 'password')}

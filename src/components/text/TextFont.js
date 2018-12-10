@@ -12,8 +12,6 @@ export default class TextFont extends Component {
 }
 
 TextFont.defaultProps = {
-    fontFamily: 'Raleway',
-    fontWeight: '400',
     color: '#ffffff'
 }
 
